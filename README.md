@@ -26,6 +26,7 @@ public class InteractWithBank extends RSBehavior {
 }
 ```
 This is a Macro , This is what controls your different behaviours 
+
 NOTE : Macros can be nested , meaning a macro can also be a behaviour inside another macro 
 
 ```Java
