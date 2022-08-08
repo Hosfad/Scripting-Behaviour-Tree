@@ -12,7 +12,7 @@ public class InteractWithBank extends RSBehavior {
     public InteractWithBank(String name) {
         super(name);
     }
-
+    // This is your behaviour , Your go function is where you write youre code;
     @Override
     public void go(Object agent, Macro parent) {
     if (Bank.isOpen()){
