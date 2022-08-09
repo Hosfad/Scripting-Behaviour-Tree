@@ -31,7 +31,7 @@ NOTE : Macros can be nested , meaning a macro can also be a behaviour inside ano
 
 ```Java
 public class Banking extends RSMacro {
-    Area closestBank = org.dreambot.api.methods.container.impl.bank.Bank.getClosestBankLocation().getArea(8);
+    Area closestBank = Bank.getClosestBankLocation().getArea(8);
 
     public Banking(String name) {
         super(name);
