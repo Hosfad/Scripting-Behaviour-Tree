@@ -12,7 +12,7 @@ public class DreambotMainClass extends AbstractScript {
 
     @Override
     public int onLoop() {
-        // The arguments are null because this behaviour has no parent
+        // The arguments are null because this behaviour has no parent.
         macro.behaviourGo(null,null);
         return 100;
     }
