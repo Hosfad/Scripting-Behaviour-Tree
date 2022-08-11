@@ -26,5 +26,6 @@ public class WalkToArea extends RSBehavior {
             Walking.walk(area.getTile());
             MethodProvider.sleep(600);
         }
+
     }
 }

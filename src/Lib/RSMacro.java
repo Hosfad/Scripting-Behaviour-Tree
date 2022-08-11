@@ -17,4 +17,5 @@ public abstract class RSMacro extends Macro {
         setFlag(Flags.NO_FLAG);
         return trans;
     }
+
 }
