@@ -1,8 +1,8 @@
 # Scripting-Behaviour-Tree
+
 Behaviour tree to better structure your scripts
 
-
-I have included an example at ``src/Example``
+I have included an example at `src/Example`
 
 This is a Behaviour , This is where youre gonna write youre code for interacting with the game
 
@@ -14,20 +14,21 @@ public class InteractWithBank extends RSBehavior {
 
     @Override
     public void go(Object agent, Macro parent) {
-    if (Bank.isOpen()){
+    if (Bank.isOpen()) {
         Bank.withdrawAll("Coins");
         MethodProvider.sleep(600);
         Bank.close();
-    }else {
+    } else {
         Bank.open();
     }
 
     }
 }
 ```
-This is a Macro , This is what controls your different behaviours 
 
-NOTE : Macros can be nested , meaning a macro can also be a behaviour inside another macro 
+This is a Macro , This is what controls your different behaviours
+
+NOTE : Macros can be nested , meaning a macro can also be a behaviour inside another macro
 
 ```Java
 public class Banking extends RSMacro {
@@ -55,7 +56,8 @@ public class Banking extends RSMacro {
 }
 ```
 
-Calling the beviour tree 
+Calling the beviour tree
+
 ```Java
 RSMacro macro = new MainBranch("super name");
 @Override
