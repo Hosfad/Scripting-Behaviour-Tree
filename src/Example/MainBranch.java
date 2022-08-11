@@ -16,7 +16,7 @@ public class MainBranch extends RSMacro {
         super(name);
         this.behaviors = new Behavior[] {
             new Banking("bank"),
-            new WalkToArea("walkToGe", grandExchange)
+                new WalkToArea("walkToGe" ,grandExchange)
         };
     }
 
@@ -24,7 +24,7 @@ public class MainBranch extends RSMacro {
     public String getTransition(Object agent, Macro parent) {
         if (Inventory.contains("Coins")) {
             return "walkToGe";
-        } else {
+        }else {
             return "bank";
         }
     }
